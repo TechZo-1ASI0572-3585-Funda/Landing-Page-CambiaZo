@@ -333,12 +333,9 @@ import Footer from "../components/footer-content/Footer.astro";
                                 Nuestro objetivo es promover un estilo de vida más sostenible, donde cada objeto tenga un propósito y un impacto positivo.
                             </p>
                         </div>
-                        <div class="about-video">
-                            <video controls width="80%" height="100%">
-                                <source src="https://github.com/TechZo-1ASI0732-4453/Landing-Page/blob/main/public/assets/images/about-us/video%20about%20the%20team.mp4?raw=true" type="video/mp4">
-                                Tu navegador no soporta el elemento de video.
-                            </video>
-                        </div>
+                    <div class="about-video" style="aspect-ratio: 16/9; width: 100%; max-width: 640px;">
+                        <iframe style="width: 100%; height: 100%; border-radius: 12px;" src="https://www.youtube.com/embed/4wrFLBGlShw" frameborder="0" allowfullscreen></iframe>
+                    </div>
                     </div>
                 </div>
     
@@ -867,7 +864,7 @@ import Footer from "../components/footer-content/Footer.astro";
         background-color: transparent;
         border-radius: 20px;
         padding: 4rem 5rem;
-        max-width: 1100px;
+        max-width: 1300px;
         margin: 5rem auto;
         margin-top: 0.1rem;
         position: relative;
@@ -899,6 +896,17 @@ import Footer from "../components/footer-content/Footer.astro";
     .about-info {
         flex: 1;
     }
+    .about-video {
+    aspect-ratio: 16/9;
+    width: 100%;
+    max-width: 640px;
+    }
+    .about-video iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+
 
     .about-info h2 {
         font-size: 2.5rem;
